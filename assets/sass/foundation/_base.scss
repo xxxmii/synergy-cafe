@@ -17,6 +17,10 @@ body {
 }
 
 img {
+  // 後で消す
+  max-width: 200px;
+  display: block;
+
   width: 100%;
   height: auto;
 }
