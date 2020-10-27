@@ -327,10 +327,78 @@
         max-width: 450px;
     }
 }
+
 .sns {
+    display: inline-block;
+    transform: rotate(90deg);
+    position: fixed;
+    top: 380px;
+    left: 0;
+
+    &__list {
+        display: flex;
+    }
+
     &__item {
+        position: relative;
+        font-size: rem(14);
+        letter-spacing: 0.05em;
+        max-width: 120px;
+
+        &:first-child {
+            margin-right: 60px;
+        }
+
+        &:first-child::after {
+            position: absolute;
+            content: "";
+            top: 2px;
+            right: -45px;
+            width: 1px;
+            height: 14px;
+            background-color: #333;
+        }
+    }
+
+    &__icon {
+        position: relative;
+        display: inline;
     }
 }
+.twitter {
+    &::before {
+        position: absolute;
+        content: "\f081";
+        top: -0.5px;
+        left: 10px;
+        font-size: rem(20);
+        transition: all 0.4s;
+        transform: rotate(-90deg);
+    }
+}
+.facebook {
+    &::before {
+        position: absolute;
+        content: "\f082";
+        top: -0.5px;
+        left: 38px;
+        font-size: rem(20);
+        transition: all 0.4s;
+        transform: rotate(-90deg);
+    }
+}
+.line {
+    &::before {
+        position: absolute;
+        content: "\f3c0";
+        top: -0.5px;
+        left: 66px;
+        font-size: rem(20);
+        transition: all 0.4s;
+        transform: rotate(-90deg);
+    }
+}
+
 .sub {
     margin-bottom: 80px;
 
@@ -350,6 +418,7 @@
 
 .top {
     display: fle flex;
+    position: relative;
 
     &__flex {
         display: flex;
