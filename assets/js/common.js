@@ -14,4 +14,15 @@ $(function () {
         return false;
     });
 
+    /* ハンバーガー */
+    $('#js-hamburger').on('click', function () {
+        $(this).toggleClass('is-active');
+        $('body').toggleClass('nav-open');
+    });
+
+    // メニューをクリックしたときにドロワーを閉じる
+    $('nav a[href^="#"]').on('click', function (e) {
+        $('#js-hamburger').toggleClass('is-active');
+        $('body').toggleClass('nav-open');
+    });
 });

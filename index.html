@@ -18,6 +18,7 @@
   <meta property="og:image" content="/ogp.jpg"> URLが決まったら絶対パスで入れる -->
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <!-- Icons -->
   <link rel="icon" href="./assets/img/favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
@@ -28,8 +29,6 @@
 </head>
 
 <body>
-
-
   <header id="header">
     <div class="header">
       <div class="header__menu">
@@ -53,9 +52,11 @@
             <li class="header__nav-item">
               <a href="#money">料金</a>
             </li>
+            <li class="header__nav-item">
+              <a href="#application" class="btn btn--small">お申し込み</a>
+            </li>
           </ul>
         </nav>
-        <a href="#application" class="btn btn--small">お申し込み</a>
       </div>
       <div class="hamburger">
         <button id="js-hamburger" type="button" class="hamburger__trigger">
@@ -67,39 +68,42 @@
     </div>
   </header>
 
-  <!-- <img src="assets/img/top_bg.svg" alt=""> -->
-  <ul class="sns">
+  <!-- <ul class="sns">
     <li class="sns__item">Follow us ●</li>
     <li class="sns__item">Share ● ● ●</li>
-  </ul>
+  </ul> -->
 
   <div class="top">
-    <div class="top__main">
-      <h1 class="heading">
-        <span class="heading--small">Web業界を目指す人・プロ達が</span>
-        学ぶ仲間やパートナーを作る<br>オンラインコミュニティ
-      </h1>
-      <p class="top__desc1">
-        SlackとDiscodeの2つのチャットツールを使い、Web業界を目指す初学者同士が、支え合い、協力し、楽しみながらスキルアップや就職・転職を目指すコミュニティです。
-      </p>
-      <p class="top__desc2">
-        <span class="font-marker">Web業界に携わる方なら、どなたでもご参加いただけます。</span><br>
-        会社にお勤めで悩んでいる方、フリーランスで横の繋がりやパートナーがほしい方、経営者で案件を依頼したい方など、どなたでもお気軽にご参加ください。
-      </p>
-      <div class="btn__wrap">
-        <a href="#application" class="btn btn--last-arrow">お申し込みフォーム</a>
+    <div class="inner">
+      <div class="top__flex">
+        <div class="top__main">
+          <h1 class="heading">
+            <span class="heading--small">Web業界を目指す人・プロ達が</span>
+            学ぶ仲間やパートナーを作る<br>オンラインコミュニティ
+          </h1>
+          <p class="top__desc">
+            SlackとDiscodeの2つのチャットツールを使い、Web業界を目指す初学者同士が、支え合い、協力し、楽しみながらスキルアップや就職・転職を目指すコミュニティです。
+          </p>
+          <p class="top__desc">
+            <span class="font-marker">Web業界に携わる方なら、どなたでもご参加いただけます。</span><br>
+            会社にお勤めで悩んでいる方、フリーランスで横の繋がりやパートナーがほしい方、経営者で案件を依頼したい方など、どなたでもお気軽にご参加ください。
+          </p>
+          <div class="btn__wrap">
+            <a href="#application" class="btn btn--last-arrow">お申し込みフォーム</a>
+          </div>
+        </div>
+        <div class="top__mv">
+          <figure class="top__img">
+            <img src="assets/img/mv.svg" alt="メインビジュアル">
+          </figure>
+        </div>
       </div>
-    </div>
-    <div class="top__mv">
-      <figure class="top__img">
-        <img src="assets/img/mv.svg" alt="メインビジュアル">
-      </figure>
     </div>
   </div>
 
-  <section id="concept" class="concept section">
+  <section id="concept" class="concept section center">
     <div class="inner">
-      <h2 class="section__heading"><span class="section__heading--small">01.コンセプト</span>
+      <h2 class="section__heading"><span class="section__heading-small">01.コンセプト</span>
         “得意とスキ”を持ち寄り、<br>新たな価値を創造する</h2>
       <div class="section__content">
         <p>
@@ -115,16 +119,19 @@
 
   <section id="service" class="service section">
     <div class="inner">
-      <div class="flex">
+      <div class="service__content flex">
         <div class="flex__item">
-          <h2 class="section__heading">02.サービス内容</h2>
-          <div class="section__content">
-            <p class="section__desc">
-              Web業界を目指し、学習をはじめたいが、まず何を学んで良いか分からないという声を非常に多く聞きます。間違った情報のまま、間違った学習をしてしまうと効率が悪く、自分のなりたい姿になれない可能性もございます。
-            </p>
-            <p class="section__desc">
-              そういった<span class="font-marker">業界を目指す方同士で協力しあいながら学習し</span>、業界への転就職をサポートするのが、クリエイターズ・シナジーカフェです。
-            </p>
+          <div class="section__inner">
+            <h2 class="section__heading"><span class="section__heading-small">02.サービス内容</span>Web業界を目指す方の為の<br>コミュニティ
+            </h2>
+            <div class="section__content">
+              <p class="section__desc">
+                Web業界を目指し、学習をはじめたいが、まず何を学んで良いか分からないという声を非常に多く聞きます。間違った情報のまま、間違った学習をしてしまうと効率が悪く、自分のなりたい姿になれない可能性もございます。
+              </p>
+              <p class="section__desc">
+                そういった<span class="font-marker">Web業界を目指す方同士で協力しあいながら学習し</span>、業界への転就職をサポートするのが、クリエイターズ・シナジーカフェです。
+              </p>
+            </div>
           </div>
         </div>
         <div class="flex__item">
@@ -133,199 +140,201 @@
           </figure>
         </div>
       </div>
-    </div>
-    <section class="planning">
-      <h3 class="sub__heading">＼ こんな企画をやってます！ ／</h3>
-      <div class="sub__content">
-        <p class="sub__desc">様々な方のサポートができるよう、シナジーカフェ独自の企画があります！<br>企画はこれからも増やす予定です！イベントを主宰することも！</p>
-        <div class="cards">
-          <div class="card">
-            <figure class="card__img">
-              <img src="assets/img/planning_mokumoku.svg" alt="">
+      <section class="planning center sub">
+        <h3 class="sub__heading">＼ こんな企画をやってます！ ／</h3>
+        <div class="sub__content">
+          <p class="sub__desc">様々な方のサポートができるよう、シナジーカフェ独自の企画があります！<br>企画はこれからも増やす予定です！イベントを主宰することも！</p>
+          <div class="cards">
+            <div class="card">
+              <figure class="card__img">
+                <img src="assets/img/planning_mokumoku.svg" alt="">
+              </figure>
+              <p class="card__title">もくもく会</p>
+              <p class="card__desc">
+                無言のボイスチャットルームを使い、各々もくもくと作業をする部屋。<br>誰かがいるだけで頑張れる！
+              </p>
+            </div>
+            <div class="card">
+              <figure class="card__img">
+                <img src="assets/img/planning_compe.svg" alt="">
+              </figure>
+              <p class="card__title">みんなでコンペ</p>
+              <p class="card__desc">月1で開催される、初学者専用の自由参加のコンペ！みんなと競い合い最優秀賞を獲得しよう！</p>
+            </div>
+            <div class="card">
+              <figure class="card__img">
+                <img src="assets/img/planning_work.svg" alt="">
+              </figure>
+              <p class="card__title">実務経験</p>
+              <p class="card__desc">コミュニティに在籍している、プロクリエイターから実務を依頼されます。<br>もちろん、報酬も適正価格で！</p>
+            </div>
+            <div class="card">
+              <figure class="card__img">
+                <img src="assets/img/planning_off-event.svg" alt="">
+              </figure>
+              <p class="card__title">オフイベント</p>
+              <p class="card__desc">新型コロナウイルスが落ち着いたら、オフイベントも開催予定！キャンプや運動会をしませんか？</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="use-tool center sub">
+        <h3 class="sub__heading">＼ 利用ツール ／</h3>
+        <div class="sub__content">
+          <p class="sub__desc">シナジーカフェは以下のツールを利用しています。<br>
+            ご利用いただける環境を用意してから、コミュニティにご参加ください。</p>
+        </div>
+        <div class="landscape-cards">
+          <div class="landscape-card">
+            <figure class="landscape-card__img">
+              <img src="assets/img/tool_slack.png" alt="">
             </figure>
-            <p class="card__title">もくもく会</p>
-            <p class="card__desc">
-              無言のボイスチャットルームを使い、各々もくもくと作業をする部屋。<br>誰かがいるだけで頑張れる！
+            <p class="landscape-card__desc">
+              シナジーカフェのメインツールです。メンバー同士のコミュニケーションに利用します。
             </p>
           </div>
-          <div class="card">
-            <figure class="card__img">
-              <img src="assets/img/planning_compe.svg" alt="">
+          <div class="landscape-card">
+            <figure class="landscape-card__img">
+              <img src="assets/img/tool_discord.png" alt="">
             </figure>
-            <p class="card__title">みんなでコンペ</p>
-            <p class="card__desc">月1で開催される、初学者専用の自由参加のコンペ！みんなと競い合い最優秀賞を獲得しよう！</p>
+            <p class="landscape-card__desc">主にボイスチャットで利用します。メンバー同士の息抜きの場所として無料開放しています。</p>
           </div>
-          <div class="card">
-            <figure class="card__img">
-              <img src="assets/img/planning_work.svg" alt="">
+          <div class="landscape-card">
+            <figure class="landscape-card__img landscape-card__img--small">
+              <img src="assets/img/tool_zoom.png" alt="">
             </figure>
-            <p class="card__title">実務経験</p>
-            <p class="card__desc">コミュニティに在籍している、プロクリエイターから実務を依頼されます。<br>もちろん、報酬も適正価格で！</p>
+            <p class="landscape-card__desc">ウェビナーなど、映像で配信するような企画で利用します。</p>
           </div>
         </div>
-        <div class="card">
-          <figure class="card__img">
-            <img src="assets/img/planning_off-event.svg" alt="">
-          </figure>
-          <p class="card__title">オフイベント</p>
-          <p class="card__desc">新型コロナウイルスが落ち着いたら、オフイベントも開催予定！キャンプや運動会をしませんか？</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="use-tool">
-      <h3 class="sub__heading">＼ 利用ツール ／</h3>
-      <div class="sub__content">
-        <p class="sub__desc">シナジーカフェは以下のツールを利用しています。
-          ご利用いただける環境を用意してから、コミュニティにご参加ください。</p>
-      </div>
-      <div class="landscape-cards">
-        <div class="landscape-card">
-          <figure class="landscape-card__img">
-            <img src="assets/img/tool_slack.png" alt="">
-          </figure>
-          <p class="landscape-card__desc">
-            シナジーカフェのメインツールです。メンバー同士のコミュニケーションに利用します。
-          </p>
+      <section class="recommend center sub">
+        <h3 class="sub__heading">＼ こんな人におすすめ！ ／</h3>
+        <div class="sub__content">
+          <div class="review-cards">
+            <div class="review-card">
+              <figure class="review-card__icon"><img src="assets/img/service_osusume01.jpg" alt="レビューアーのアイコン"></figure>
+              <div class="review-card__content">
+                <p class="review-card__comment">Web・グラフィック業界に転就職したい！</p>
+                <p class="review-card__reviewer">未経験Webデザイナー志望</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <figure class="review-card__icon"><img src="assets/img/service_osusume02.jpg" alt="レビューアーのアイコン"></figure>
+              <div class="review-card__content">
+                <p class="review-card__comment">ワークフロー・業界への知見を知りたい！</p>
+                <p class="review-card__reviewer">未経験 Webエンジニア 志望</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <figure class="review-card__icon"><img src="assets/img/service_osusume03.jpg" alt="レビューアーのアイコン"></figure>
+              <div class="review-card__content">
+                <p class="review-card__comment">作品を見せ合える場所が欲しい！</p>
+                <p class="review-card__reviewer">未経験 グラフィックデザイナー志望</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <figure class="review-card__icon"><img src="assets/img/service_osusume04.jpg" alt="レビューアーのアイコン"></figure>
+              <div class="review-card__content">
+                <p class="review-card__comment">みんなで支え合う場所が欲しい！</p>
+                <p class="review-card__reviewer">未経験Webデザイナー志望</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <figure class="review-card__icon"><img src="assets/img/service_osusume05.jpg" alt="レビューアーのアイコン"></figure>
+              <div class="review-card__content">
+                <p class="review-card__comment">気軽に質問できる場所が欲しい！</p>
+                <p class="review-card__reviewer">未経験Webデザイナー志望</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <figure class="review-card__icon"><img src="assets/img/service_osusume06.jpg" alt="レビューアーのアイコン"></figure>
+              <div class="review-card__content">
+                <p class="review-card__comment">仕事の悩みを相談したい！</p>
+                <p class="review-card__reviewer">従事者 Webデザイナー</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <figure class="review-card__icon"><img src="assets/img/service_osusume07.jpg" alt="レビューアーのアイコン"></figure>
+              <div class="review-card__content">
+                <p class="review-card__comment">一緒に働ける仲間を探したい！</p>
+                <p class="review-card__reviewer">フリーランス エンジニア</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <figure class="review-card__icon"><img src="assets/img/service_osusume08.jpg" alt="レビューアーのアイコン"></figure>
+              <div class="review-card__content">
+                <p class="review-card__comment">実務に触れて自信をつけたい！</p>
+                <p class="review-card__reviewer">未経験Webエンジニア志望</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <figure class="review-card__icon"><img src="assets/img/service_osusume09.jpg" alt="レビューアーのアイコン"></figure>
+              <div class="review-card__content">
+                <p class="review-card__comment">初学者に仕事を依頼したい！</p>
+                <p class="review-card__reviewer">会社経営者</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <figure class="review-card__icon"><img src="assets/img/service_osusume10.jpg" alt="レビューアーのアイコン"></figure>
+              <div class="review-card__content">
+                <p class="review-card__comment">自社以外の仕事のやりかたを知りたい！</p>
+                <p class="review-card__reviewer">従事者 Webエンジニア</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <figure class="review-card__icon"><img src="assets/img/service_osusume11.jpg" alt="レビューアーのアイコン"></figure>
+              <div class="review-card__content">
+                <p class="review-card__comment">キャリアアップの相談をしたい！</p>
+                <p class="review-card__reviewer">未経験Webデザイナー志望</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="landscape-card">
-          <figure class="landscape-card__img">
-            <img src="assets/img/tool_discord.png" alt="">
-          </figure>
-          <p class="landscape-card__desc">主にボイスチャットで利用します。メンバー同士の息抜きの場所として無料開放しています。</p>
-        </div>
-        <div class="landscape-card">
-          <figure class="landscape-card__img">
-            <img src="assets/img/tool_zoom.png" alt="">
-          </figure>
-          <p class="landscape-card__desc">ウェビナーなど、映像で配信するような企画で利用します。</p>
-        </div>
-      </div>
-    </section>
 
-    <section class="recommend">
-      <h3 class="sub__heading">＼ こんな人におすすめ！ ／</h3>
-      <div class="sub__content">
-        <div class="review-cards">
-          <div class="review-card">
-            <figure class="revies-card-icon"><img src="assets/img/service_osusume01.jpg" alt="レビューアーのアイコン"></figure>
-            <div class="review-card__content">
-              <p class="review-card__comment">Web・グラフィック業界に転就職したい！</p>
-              <p class="review-card__reviewer">未経験Webデザイナー志望</p>
-            </div>
-          </div>
-          <div class="review-card">
-            <figure class="revies-card-icon"><img src="assets/img/service_osusume02.jpg" alt="レビューアーのアイコン"></figure>
-            <div class="review-card__content">
-              <p class="review-card__comment">ワークフロー・業界への知見を知りたい！</p>
-              <p class="review-card__reviewer">未経験 Webエンジニア 志望</p>
-            </div>
-          </div>
-          <div class="review-card">
-            <figure class="revies-card-icon"><img src="assets/img/service_osusume03.jpg" alt="レビューアーのアイコン"></figure>
-            <div class="review-card__content">
-              <p class="review-card__comment">作品を見せ合える場所が欲しい！</p>
-              <p class="review-card__reviewer">未経験 グラフィックデザイナー志望</p>
-            </div>
-          </div>
-          <div class="review-card">
-            <figure class="revies-card-icon"><img src="assets/img/service_osusume04.jpg" alt="レビューアーのアイコン"></figure>
-            <div class="review-card__content">
-              <p class="review-card__comment">みんなで支え合う場所が欲しい！</p>
-              <p class="review-card__reviewer">未経験Webデザイナー志望</p>
-            </div>
-          </div>
-          <div class="review-card">
-            <figure class="revies-card-icon"><img src="assets/img/service_osusume05.jpg" alt="レビューアーのアイコン"></figure>
-            <div class="review-card__content">
-              <p class="review-card__comment">気軽に質問できる場所が欲しい！</p>
-              <p class="review-card__reviewer">未経験Webデザイナー志望</p>
-            </div>
-          </div>
-          <div class="review-card">
-            <figure class="revies-card-icon"><img src="assets/img/service_osusume06.jpg" alt="レビューアーのアイコン"></figure>
-            <div class="review-card__content">
-              <p class="review-card__comment">仕事の悩みを相談したい！</p>
-              <p class="review-card__reviewer">従事者 Webデザイナー</p>
-            </div>
-          </div>
-          <div class="review-card">
-            <figure class="revies-card-icon"><img src="assets/img/service_osusume07.jpg" alt="レビューアーのアイコン"></figure>
-            <div class="review-card__content">
-              <p class="review-card__comment">一緒に働ける仲間を探したい！</p>
-              <p class="review-card__reviewer">フリーランス エンジニア</p>
-            </div>
-          </div>
-          <div class="review-card">
-            <figure class="revies-card-icon"><img src="assets/img/service_osusume08.jpg" alt="レビューアーのアイコン"></figure>
-            <div class="review-card__content">
-              <p class="review-card__comment">実務に触れて自信をつけたい！</p>
-              <p class="review-card__reviewer">未経験Webエンジニア志望</p>
-            </div>
-          </div>
-          <div class="review-card">
-            <figure class="revies-card-icon"><img src="assets/img/service_osusume09.jpg" alt="レビューアーのアイコン"></figure>
-            <div class="review-card__content">
-              <p class="review-card__comment">初学者に仕事を依頼したい！</p>
-              <p class="review-card__reviewer">会社経営者</p>
-            </div>
-          </div>
-          <div class="review-card">
-            <figure class="revies-card-icon"><img src="assets/img/service_osusume10.jpg" alt="レビューアーのアイコン"></figure>
-            <div class="review-card__content">
-              <p class="review-card__comment">自社以外の仕事のやりかたを知りたい！</p>
-              <p class="review-card__reviewer">従事者 Webエンジニア</p>
-            </div>
-          </div>
-          <div class="review-card">
-            <figure class="revies-card-icon"><img src="assets/img/service_osusume11.jpg" alt="レビューアーのアイコン"></figure>
-            <div class="review-card__content">
-              <p class="review-card__comment">キャリアアップの相談をしたい！</p>
-              <p class="review-card__reviewer">未経験Webデザイナー志望</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </section>
+      </section>
 
-  <!-- <img src="assets/img/service_bg_after.svg" alt="">
+      <!-- <img src="assets/img/service_bg_after.svg" alt="">
   <img src="assets/img/service_bg_before.svg" alt="">
   <img src="assets/img/service_bg_left.svg" alt="">
   <img src="assets/img/service_bg_right.svg" alt=""> -->
-  <img src="assets/img/deco_pc.svg" alt="">
+      <img src="assets/img/deco_pc.svg" alt="">
 
-  <section id="management-member" class="management-member section">
-    <div class="inner">
-      <h2 class="section__heading"><span class="section__heading--small">03.運営メンバー</span>初学者さんの育つ<br>コミュニティを運営する</h2>
-      <div class="section__content">
-        <p class="section__desc">
-          運営メンバーの3人をご紹介します。<br>
-          3人の共通の思いは、初学者さんの学習負担をなるべく軽減すること。<br>
-          運営3人は独学で業界に入り、苦労した経験があるので、当時欲しかった場所を、<br>
-          コミュニティで再現し、今学習する初学者さんをサポートしたい思いから結成しました。
-        </p>
-        <ul class="management-member__list">
-          <li class="management-member__item">
-            <figure class="management-member__img">
-              <img href="assets/img/member_honma.jpg" alt="ホンマ">
-            </figure>
-            <p class="management-member__name">ホンマ</p>
-          </li>
-          <li class="management-member__item">
-            <figure class="management-member__img">
-              <img href="assets/img/member_mariko.jpg" alt="マリコ">
-            </figure>
-            <p class="management-member__name">マリコ</p>
-          </li>
-          <li class="management-member__item">
-            <figure class="management-member__img">
-              <img href="assets/img/member_sekiyuou.jpg" alt="石油王">
-            </figure>
-            <p class="management-member__name">石油王</p>
-          </li>
-        </ul>
-      </div>
+      <section id="management-member" class="management-member section center">
+        <div class="inner">
+          <h2 class="section__heading"><span class="section__heading-small">03.運営メンバー</span>初学者さんの育つ<br>コミュニティを運営する
+          </h2>
+          <div class="section__content">
+            <p class="section__desc">
+              運営メンバーの3人をご紹介します。<br>
+              3人の共通の思いは、初学者さんの学習負担をなるべく軽減すること。<br>
+              運営3人は独学で業界に入り、苦労した経験があるので、当時欲しかった場所を、<br>
+              コミュニティで再現し、今学習する初学者さんをサポートしたい思いから結成しました。
+            </p>
+            <ul class="management-member__list">
+              <li class="management-member__item">
+                <figure class="management-member__img">
+                  <img src="assets/img/member_honma.jpg" alt="ホンマ">
+                </figure>
+                <p class="management-member__name">ホンマ</p>
+              </li>
+              <li class="management-member__item">
+                <figure class="management-member__img">
+                  <img src="assets/img/member_mariko.jpg" alt="マリコ">
+                </figure>
+                <p class="management-member__name">マリコ</p>
+              </li>
+              <li class="management-member__item">
+                <figure class="management-member__img">
+                  <img src="assets/img/member_sekiyuou.jpg" alt="石油王">
+                </figure>
+                <p class="management-member__name">石油王</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
   </section>
 
@@ -334,13 +343,15 @@
     <div class="inner">
       <div class="flex">
         <div class="flex__item">
-          <h2 class="section__heading"><span class="section__heading--small">04.入会条件</span>
-            初学者だけではなく、<br>s業界の方全員が参加できます。</h2>
-          <div class="section__content">
-            <p class="section__desc">
-              Web業界を目指している方だけでなく、例えば会社に入ったけど、社内の仕事内容が正しいか分からない、社内のやり方だけでなく、他社のやり方を知りたいという方も多いと思いますし、フリーランスになったけど、1人では不安なので、横のつながりが欲しい。信頼できる仲間とチームを作りたいといった方もいらっしゃると思います。<br>
-              <span class="font-marker">初学者だけでなく、Web業界に携わる全員が参加できるコミュニティです。</span>
-            </p>
+          <div class="section__inner">
+            <h2 class="section__heading"><span class="section__heading-small">04.入会条件</span>
+              初学者だけではなく、<br>業界の方全員が参加できます。</h2>
+            <div class="section__content">
+              <p class="section__desc">
+                Web業界を目指している方だけでなく、例えば会社に入ったけど、社内の仕事内容が正しいか分からない、社内のやり方だけでなく、他社のやり方を知りたいという方も多いと思いますし、フリーランスになったけど、1人では不安なので、横のつながりが欲しい。信頼できる仲間とチームを作りたいといった方もいらっしゃると思います。<br>
+                <span class="font-marker">初学者だけでなく、Web業界に携わる全員が参加できるコミュニティです。</span>
+              </p>
+            </div>
           </div>
         </div>
         <div class="flex__item">
@@ -349,7 +360,7 @@
           </figure>
         </div>
       </div>
-      <div class="cards">
+      <div class="cards conditions__cards">
         <div class="card">
           <figure class="card__img">
             <img src="assets/img/conditions__first-scholar.svg" alt="初学者の画像">
@@ -371,13 +382,13 @@
           <p class="card__title">フリーランス</p>
           <p class="card__desc">1人だと受注の幅を広げることが難しいと思います。仲間作りやチーム結成をしてはいかがでしょうか？</p>
         </div>
-      </div>
-      <div class="card">
-        <figure class="card__img">
-          <img src="assets/img/conditions__management.svg" alt="事業経営者の画像">
-        </figure>
-        <p class="card__title">事業経営者</p>
-        <p class="card__desc">簡単な仕事を依頼したい、頑張っている人材をスカウトしたい。そういった願いも叶います。</p>
+        <div class="card">
+          <figure class="card__img">
+            <img src="assets/img/conditions__management.svg" alt="事業経営者の画像">
+          </figure>
+          <p class="card__title">事業経営者</p>
+          <p class="card__desc">簡単な仕事を依頼したい、頑張っている人材をスカウトしたい。そういった願いも叶います。</p>
+        </div>
       </div>
     </div>
   </section>
@@ -386,9 +397,9 @@
 
 
   <img src="assets/img/deco_present.svg" alt="">
-  <section id="money" class="money section">
+  <section id="money" class="money section center">
     <div class="inner">
-      <h2 class="section__heading"><span class="section__heading--small">05.料金</span>
+      <h2 class="section__heading section__heading--small"><span class="section__heading-small">05.料金</span>
         月額・オプション料金</h2>
       <div class="section__content">
         <figure class="money__img">
@@ -396,22 +407,22 @@
         </figure>
         <p class="money__desc">コミュニティは<span class="font-marker">基本料金でお楽しみいただけます。</span></p>
       </div>
-      <table class="table">
-        <tr class="table__row">
-          <td class="table__head">運営者に1on1で直接相談する</td>
-          <td class="table__content">3,000円/1h</td>
+      <table class="money__table">
+        <tr class="money__table-row">
+          <td class="money__table-head">運営者に1on1で直接相談する</td>
+          <td class="money__table-content">3,000円/1h</td>
         </tr>
-        <tr class="table__row">
-          <td class="table__head">お仕事依頼</td>
-          <td class="table__content">無料</td>
+        <tr class="money__table-row">
+          <td class="money__table-head">お仕事依頼</td>
+          <td class="money__table-content">無料</td>
         </tr>
-        <tr class="table__row">
-          <td class="table__head">コミュニティ専用ウェビナー</td>
-          <td class="table__content">無料〜毎回異なる</td>
+        <tr class="money__table-row">
+          <td class="money__table-head">コミュニティ専用ウェビナー</td>
+          <td class="money__table-content">無料〜毎回異なる</td>
         </tr>
-        <tr class="table__row">
-          <td class="table__head">オフラインイベント</td>
-          <td class="table__content">無料〜毎回異なる</td>
+        <tr class="money__table-row">
+          <td class="money__table-head">オフラインイベント</td>
+          <td class="money__table-content">無料〜毎回異なる</td>
         </tr>
       </table>
     </div>
@@ -421,13 +432,14 @@
 
   <!-- <img src="assets/img/application_bg_before.svg" alt=""> -->
 
-  <section id="application" class="application section">
+  <section id="application" class="application section center">
     <div class="inner">
-      <h2 class="section__heading section__heading--white"><span class="section__heading--small">06.お申し込み</span>
+      <h2 class="section__heading section__heading--white section__heading--small"><span
+          class="section__heading-small section__heading-small--white">06.お申し込み</span>
         お申し込みフォームから<br>お申し込みください</h2>
       <div class="section__content">
         <p class="application__desc">コミュニティご入会後、まずSlackにてルール確認をお願いします。</p>
-        <ul class="processs__list">
+        <ul class="process__list">
           <li class="process__item">
             <span class="process__num">１</span>ページ内【お申し込みフォーム（Googleフォーム）】よりお手続きください。
           </li>
@@ -444,9 +456,10 @@
         <div class="terms-of-use">
           <p class="terms-of-use__content">
             利用規約や個人情報保護方針、禁止行為を入力します。利用規約や個人情報保護方針、禁止行為を入力します。利用規約や個人情報保護方針、禁止行為を入力します。利用規約や個人情報保護方針、禁止行為を入力します。利用規約や個人情報保護方針、禁止行為を入力します。利用規約や個人情報保護方針、禁止行為を入力します。利用規約や個人情報保護方針、禁止行為を入力します。利用規約や個人情報保護方針、禁止行為を入力します。利用規約や個人情報保護方針、禁止行為を入力します。利用規約や個人情報保護方針、禁止行為を入力します。
+            利用規約や個人情報保護方針、禁止行為を入力します。利用規約や個人情報保護方針、禁止行為を入力します。利用規約や個人情報保護方針、禁止行為を入力します。利用規約や個人情報保護方針、禁止行為を入力します。利用規約や個人情報保護方針、禁止行為を入力します。利用規約や個人情報保護方針、禁止行為を入力します。利用規約や個人情報保護方針、禁止行為を入力します。利用規約や個人情報保護方針、禁止行為を入力します。利用規約や個人情報保護方針、禁止行為を入力します。利用規約や個人情報保護方針、禁止行為を入力します。
           </p>
         </div>
-        <div class="btn__wrap">
+        <div class="btn__wrap btn__wrap--center">
           <a href="#" class="btn btn--lg btn--right-arrow">お申し込みはこちら</a>
         </div>
       </div>

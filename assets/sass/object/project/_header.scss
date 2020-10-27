@@ -1,0 +1,26 @@
+.header {
+    &__logo {
+        margin: 50px;
+        width: 280px;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__nav {
+        display: flex;
+    }
+    &__nav-item {
+        font-weight: 700;
+        margin-top: 75px;
+        margin-right: 50px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__nav-list {
+        display: flex;
+        margin-right: 60px;
+    }
+}

@@ -1,0 +1,9 @@
+.footer {
+    background-color: $main-color;
+    padding-bottom: 40px;
+    &__copyright {
+        color: $white;
+        text-align: center;
+        font-size: rem(14);
+    }
+}
