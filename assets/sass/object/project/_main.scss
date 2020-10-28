@@ -608,8 +608,6 @@
 }
 @include tablet {
     .top {
-        margin-top: 0;
-
         &__mv {
             display: none;
         }
