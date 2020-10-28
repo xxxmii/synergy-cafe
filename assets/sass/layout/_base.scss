@@ -8,6 +8,9 @@ body {
     position: relative;
 }
 
+.connept {
+    margin-bottom: 200px;
+}
 .service {
     position: relative;
     background-color: $base-bg-light;
@@ -24,6 +27,7 @@ body {
 .use-tool {
     position: relative;
     @include bg-line-right(url("/assets/img/service_bg_right.svg"));
+    padding-bottom: 100px;
 }
 
 .recommend {
@@ -37,6 +41,10 @@ body {
         height: auto;
         z-index: 1;
     }
+}
+
+.management {
+    padding: 250px 0;
 }
 
 .conditions {
@@ -58,6 +66,7 @@ body {
 .money {
     position: relative;
     margin: 0 auto;
+    padding: 180px 0 300px;
 
     &__deco-work-person {
         position: absolute;
@@ -73,4 +82,5 @@ body {
     position: relative;
     @include bg-line-top(url("/assets/img/application_bg_before.svg"), 150px);
     background-color: $main-color;
+    padding: 80px 0;
 }

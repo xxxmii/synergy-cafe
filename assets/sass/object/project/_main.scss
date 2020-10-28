@@ -146,6 +146,7 @@
 }
 .font-marker {
     background: linear-gradient(transparent 60%, $accent-color_light 60%);
+    font-weight: 600;
 }
 
 .landscape-card {
@@ -430,7 +431,7 @@
     }
 }
 .heading {
-    font-size: rem(50);
+    font-size: rem(52);
     color: $main-color;
     font-weight: 700;
     letter-spacing: 0.02em;
