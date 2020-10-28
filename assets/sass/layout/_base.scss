@@ -3,3 +3,74 @@ body {
     background-repeat: no-repeat;
     background-position: top right;
 }
+
+.top {
+    position: relative;
+}
+
+.service {
+    position: relative;
+    background-color: $base-bg-light;
+    @include bg-line-top(url("/assets/img/service_bg_before.svg"), 300px);
+    @include bg-line-bottom(url("/assets/img/service_bg_after.svg"), 300px);
+    margin: auto;
+}
+
+.planning {
+    position: relative;
+    @include bg-line-left(url("/assets/img/service_bg_left.svg"));
+}
+
+.use-tool {
+    position: relative;
+    @include bg-line-right(url("/assets/img/service_bg_right.svg"));
+}
+
+.recommend {
+    position: relative;
+
+    &__deco-pc {
+        position: absolute;
+        bottom: -220px;
+        left: 200px;
+        max-width: 300px;
+        height: auto;
+        z-index: 1;
+    }
+}
+
+.conditions {
+    position: relative;
+    background-color: $base-bg-light;
+    @include bg-line-top(url("/assets/img/conditions_bg_before.svg"), 300px);
+    @include bg-line-bottom(url("/assets/img/conditions_bg_after.svg"), 400px);
+
+    &__deco-present {
+        position: absolute;
+        bottom: -220px;
+        left: 200px;
+        max-width: 300px;
+        height: auto;
+        z-index: 1;
+    }
+}
+
+.money {
+    position: relative;
+    margin: 0 auto;
+
+    &__deco-work-person {
+        position: absolute;
+        bottom: -50px;
+        right: 200px;
+        max-width: 300px;
+        height: auto;
+        z-index: 1;
+    }
+}
+
+.application {
+    position: relative;
+    @include bg-line-top(url("/assets/img/application_bg_before.svg"), 150px);
+    background-color: $main-color;
+}

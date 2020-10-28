@@ -1,7 +1,5 @@
 .application {
-    background-color: $main-color;
     color: $white;
-
     &__heading {
         font-size: rem(38);
     }
@@ -56,7 +54,8 @@
     position: relative;
 
     &::hover {
-        background-color: $accent-color_hover;
+        background-color: $white;
+        // background-color: $accent-color_hover;
     }
 
     &__wrap {
@@ -130,8 +129,6 @@
     }
 }
 
-.concept {
-}
 .conditions {
     &__img {
         max-width: 450px;
@@ -204,7 +201,6 @@
     }
 }
 .money {
-    margin: 0 auto;
     &__desc {
     }
     &__img {
@@ -236,13 +232,10 @@
         }
     }
 }
-.page-top {
-}
+
 .planning {
 }
 
-.recommend {
-}
 .review-card {
     display: flex;
     background-color: $white;
@@ -317,8 +310,6 @@
     }
 }
 .service {
-    margin: auto;
-
     &__content {
         margin-bottom: 150px;
     }
@@ -334,6 +325,7 @@
     position: fixed;
     top: 380px;
     left: 0;
+    z-index: 1;
 
     &__list {
         display: flex;
@@ -417,9 +409,6 @@
 }
 
 .top {
-    display: fle flex;
-    position: relative;
-
     &__flex {
         display: flex;
     }

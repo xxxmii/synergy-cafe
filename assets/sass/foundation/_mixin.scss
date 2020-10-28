@@ -28,3 +28,62 @@
         @content;
     }
 }
+
+/* bg-line */
+@mixin bg-line-top($url, $height) {
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: calc(#{0px} - #{$height});
+        width: 100%;
+        height: $height;
+        background-image: $url;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@mixin bg-line-bottom($url, $height) {
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: calc(#{0px} - #{$height});
+        width: 100%;
+        height: $height;
+        background-image: $url;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@mixin bg-line-left($url) {
+    &::before {
+        content: "";
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 400px;
+        height: 950px;
+        background-image: $url;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+@mixin bg-line-right($url) {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 350px;
+        height: 850px;
+        background-image: $url;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
