@@ -38,7 +38,6 @@
             display: block;
             position: static;
             width: 75%;
-            margin-top: 50px;
         }
 
         &__menu {
@@ -71,6 +70,7 @@
 
             &-item {
                 margin-top: 0;
+                margin-right: 0;
                 margin-bottom: 40px;
 
                 a {
@@ -83,5 +83,25 @@
     .nav-open .header__menu {
         transform: translateX(0);
         box-shadow: 0 0 5px 0 rgba(35, 24, 21, 0.5);
+    }
+}
+
+@include sp {
+    .header {
+        &__logo {
+            width: 100%;
+            margin: 30px auto 10px;
+        }
+
+        &__menu {
+            width: 60%;
+        }
+        &__nav {
+            margin: 25px auto;
+
+            &-list {
+                margin-right: 0;
+            }
+        }
     }
 }

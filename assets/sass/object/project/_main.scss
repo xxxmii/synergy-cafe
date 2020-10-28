@@ -37,6 +37,13 @@
         margin-bottom: 60px;
     }
 }
+@include tablet {
+    .process {
+        &__list {
+            width: 100%;
+        }
+    }
+}
 @include sp {
     .process {
         &__num {
@@ -45,7 +52,6 @@
             height: 30px;
         }
         &__list {
-            width: 100%;
             margin-bottom: 40px;
         }
     }
@@ -64,9 +70,14 @@
         text-align: left;
     }
 }
-@include sp {
+@include tablet {
     .terms-of-use {
         width: 100%;
+    }
+}
+@include sp {
+    .terms-of-use {
+        padding: 20px 30px;
     }
 }
 
@@ -129,6 +140,10 @@
 
         &--lg {
             max-width: 100%;
+        }
+
+        &--small {
+            padding: 8px 20px;
         }
     }
 }
@@ -195,7 +210,7 @@
 @include tablet {
     .conditions {
         &__img {
-            margin: 0 auto;
+            margin: 0 auto 50px;
         }
     }
 }
@@ -602,7 +617,8 @@
 }
 @include sp {
     .top {
-        &__main {
+        margin-top: 100px;
+        ˝ &__main {
             margin-right: 0;
             padding: 50px 0;
         }
