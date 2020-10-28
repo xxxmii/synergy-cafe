@@ -2,6 +2,8 @@
     &__logo {
         margin: 50px;
         width: 280px;
+        position: fixed;
+        z-index: 10;
     }
     &__menu {
         display: flex;
@@ -9,6 +11,10 @@
     }
     &__nav {
         display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
     }
     &__nav-item {
         font-weight: 700;
