@@ -105,10 +105,11 @@
 }
 .card {
     background-color: $white;
-    max-width: 280px;
+    max-width: calc((100% - 60px) / 4);
     margin: 0 10px;
     padding: 40px 20px;
     border-radius: 10px;
+    z-index: 1;
 
     &__desc {
         font-size: rem(14);
@@ -129,6 +130,17 @@
     }
 }
 
+@include tablet {
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        max-width: calc((100% - 60px) / 2);
+        margin-bottom: 30px;
+    }
+}
+
 .conditions {
     &__img {
         max-width: 450px;
@@ -138,12 +150,26 @@
         margin-top: 30px;
     }
 }
+@include tablet {
+    .conditions {
+        &__img {
+            margin: 0 auto;
+        }
+    }
+}
+
 .flex {
     display: flex;
     &__item {
         margin: auto;
     }
 }
+@include tablet {
+    .flex {
+        display: block;
+    }
+}
+
 .font-marker {
     background: linear-gradient(transparent 60%, $accent-color_light 60%);
     font-weight: 600;
@@ -180,6 +206,19 @@
 }
 
 @include tablet {
+    .landscape-cards {
+        flex-wrap: wrap;
+    }
+
+    .landscape-card {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+
+        &__desc {
+            text-align: center;
+        }
+    }
 }
 
 .management-member {
@@ -322,6 +361,7 @@
 
     &__img {
         max-width: 450px;
+        margin: 0 auto;
     }
 }
 
@@ -397,6 +437,12 @@
     }
 }
 
+@include tablet {
+    .sns {
+        display: none;
+    }
+}
+
 .sub {
     margin-bottom: 80px;
 
@@ -411,6 +457,11 @@
         font-size: rem(32);
         line-height: 1.8;
         margin-bottom: 20px;
+    }
+}
+@include tablet {
+    .sub {
+        margin-bottom: 0;
     }
 }
 
@@ -433,6 +484,15 @@
     &__mv {
         flex-grow: 1;
         margin: auto;
+    }
+}
+@include tablet {
+    .top {
+        margin-top: 0;
+
+        &__mv {
+            display: none;
+        }
     }
 }
 .heading {

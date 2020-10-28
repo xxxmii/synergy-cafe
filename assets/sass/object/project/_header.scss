@@ -27,8 +27,7 @@
     }
     &__nav-list {
         display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
+
         margin-right: 60px;
     }
 }
@@ -64,6 +63,11 @@
             margin: 25px 50px;
             padding: 0;
             width: 100%;
+
+            &-list {
+                justify-content: flex-start;
+                flex-direction: column;
+            }
 
             &-item {
                 margin-top: 0;
