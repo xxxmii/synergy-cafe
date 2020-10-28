@@ -27,6 +27,57 @@
     }
     &__nav-list {
         display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
         margin-right: 60px;
+    }
+}
+
+@include tablet {
+    .header {
+        &__logo {
+            display: block;
+            position: static;
+            width: 75%;
+            margin-top: 50px;
+        }
+
+        &__menu {
+            justify-content: flex-start;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: #ffffff;
+            padding: 0 15px;
+            z-index: 2;
+            background: $main-color;
+            transform: translateX(100%);
+            transition: transform 0.8s;
+        }
+
+        &__nav {
+            position: static;
+            flex-direction: column;
+            margin: 25px 50px;
+            padding: 0;
+            width: 100%;
+
+            &-item {
+                margin-top: 0;
+                margin-bottom: 40px;
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .nav-open .header__menu {
+        transform: translateX(0);
+        box-shadow: 0 0 5px 0 rgba(35, 24, 21, 0.5);
     }
 }
