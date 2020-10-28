@@ -22,6 +22,12 @@ body {
   font-weight: 400;
 }
 
+@include sp {
+  body {
+    font-size: rem(15);
+  }
+}
+
 img {
   width: 100%;
   height: auto;
@@ -47,5 +53,11 @@ a {
   .inner {
     width: 100%;
     padding: 0 50px;
+  }
+}
+
+@include sp {
+  .inner {
+    padding: 0 20px;
   }
 }

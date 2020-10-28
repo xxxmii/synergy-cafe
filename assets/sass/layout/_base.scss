@@ -9,26 +9,52 @@ body {
     margin-top: 100px;
 }
 
-.connept {
+.concept {
+    padding: 100px 0 150px;
     margin-bottom: 200px;
 }
+@include tablet {
+    .concept {
+        padding: 50px 0;
+    }
+}
+@include sp {
+    .concept {
+        margin-bottom: 50px;
+    }
+}
+
 .service {
     position: relative;
     background-color: $base-bg-light;
     @include bg-line-top(url("/assets/img/service_bg_before.svg"), 300px);
     @include bg-line-bottom(url("/assets/img/service_bg_after.svg"), 300px);
     margin: auto;
+    padding: 50px 0 150px;
+}
+@include tablet {
+    .service {
+        padding: 30px 0 50px;
+        @include bg-line-top(url("/assets/img/service_bg_before.svg"), 150px);
+        @include bg-line-bottom(url("/assets/img/service_bg_after.svg"), 100px);
+    }
 }
 
 .planning {
     position: relative;
-    @include bg-line-left(url("/assets/img/service_bg_left.svg"));
+    @include bg-line-left(url("/assets/img/service_bg_left.svg"), 400);
 }
 
 .use-tool {
     position: relative;
-    @include bg-line-right(url("/assets/img/service_bg_right.svg"));
-    padding-bottom: 100px;
+    @include bg-line-right(url("/assets/img/service_bg_right.svg"), 350);
+    margin-bottom: 100px;
+}
+
+@include tablet {
+    .use-tool {
+        padding-bottom: 0;
+    }
 }
 
 .recommend {
@@ -57,8 +83,25 @@ body {
     }
 }
 
+@include sp {
+    .recommend {
+        &__deco-pc {
+            bottom: -120px;
+            left: 50px;
+            max-width: 200px;
+        }
+    }
+}
+
 .management {
+    padding: 50px 0 200px;
     margin-top: 250px;
+}
+@include sp {
+    .management {
+        padding: 50px 0 100px;
+        margin-top: 120px;
+    }
 }
 
 .conditions {
@@ -66,6 +109,7 @@ body {
     background-color: $base-bg-light;
     @include bg-line-top(url("/assets/img/conditions_bg_before.svg"), 300px);
     @include bg-line-bottom(url("/assets/img/conditions_bg_after.svg"), 400px);
+    padding: 50px 0 200px;
 
     &__deco-present {
         position: absolute;
@@ -79,6 +123,7 @@ body {
 
 @include tablet {
     .conditions {
+        padding: 50px 0 150px;
         &__deco-present {
             bottom: -120px;
             left: 30px;
@@ -87,9 +132,22 @@ body {
     }
 }
 
+@include sp {
+    .conditions {
+        padding: 50px 0 100px;
+        @include bg-line-top(url("/assets/img/conditions_bg_before.svg"), 150px);
+        @include bg-line-bottom(url("/assets/img/conditions_bg_after.svg"), 200px);
+
+        &__deco-present {
+            bottom: -100px;
+        }
+    }
+}
+
 .money {
     position: relative;
     margin: 180px auto;
+    padding: 50px 0 150px;
 
     &__deco-work-person {
         position: absolute;
@@ -100,10 +158,35 @@ body {
         z-index: 1;
     }
 }
+@include tablet {
+    .money {
+        margin: 150px auto;
+        padding: 30px 0 100px;
 
+        &__deco-work-person {
+            max-width: 200px;
+            right: 80px;
+        }
+    }
+}
+@include sp {
+    .money {
+        margin: 120px auto 100px;
+        padding: 30px 0 50px;
+        &__deco-work-person {
+            max-width: 150px;
+            bottom: -150px;
+        }
+    }
+}
 .application {
     position: relative;
     @include bg-line-top(url("/assets/img/application_bg_before.svg"), 150px);
     background-color: $main-color;
     padding: 80px 0;
+}
+@include sp {
+    .application {
+        padding: 80px 0 50px;
+    }
 }

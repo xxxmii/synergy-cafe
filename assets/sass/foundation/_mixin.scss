@@ -59,13 +59,14 @@
     }
 }
 
-@mixin bg-line-left($url) {
+@mixin bg-line-left($url, $width) {
     &::before {
         content: "";
         position: absolute;
         top: -100px;
         left: 0;
-        width: 400px;
+        width: $width;
+        max-width: 100%;
         height: 950px;
         background-image: $url;
         background-position: center center;
@@ -73,13 +74,14 @@
         background-size: contain;
     }
 }
-@mixin bg-line-right($url) {
+@mixin bg-line-right($url, $width) {
     &::before {
         content: "";
         position: absolute;
         top: -100px;
         right: 0;
-        width: 350px;
+        width: $width;
+        max-width: 100%;
         height: 850px;
         background-image: $url;
         background-position: center center;
