@@ -1,5 +1,5 @@
 body {
-    background-image: url("/assets/img/hero_bg.svg");
+    background-image: url("../img/hero_bg.svg");
     background-repeat: no-repeat;
     background-position: top right;
 }
@@ -27,27 +27,27 @@ body {
 .service {
     position: relative;
     background-color: $base-bg-light;
-    @include bg-line-top(url("/assets/img/service_bg_before.svg"), 300px);
-    @include bg-line-bottom(url("/assets/img/service_bg_after.svg"), 300px);
+    @include bg-line-top(url("../img/service_bg_before.svg"), 300px);
+    @include bg-line-bottom(url("../img/service_bg_after.svg"), 300px);
     margin: auto;
     padding: 50px 0 150px;
 }
 @include tablet {
     .service {
         padding: 30px 0 50px;
-        @include bg-line-top(url("/assets/img/service_bg_before.svg"), 150px);
-        @include bg-line-bottom(url("/assets/img/service_bg_after.svg"), 100px);
+        @include bg-line-top(url("../img/service_bg_before.svg"), 150px);
+        @include bg-line-bottom(url("../img/service_bg_after.svg"), 100px);
     }
 }
 
 .planning {
     position: relative;
-    @include bg-line-left(url("/assets/img/service_bg_left.svg"), 400);
+    @include bg-line-left(url("../img/service_bg_left.svg"), 400);
 }
 
 .use-tool {
     position: relative;
-    @include bg-line-right(url("/assets/img/service_bg_right.svg"), 350);
+    @include bg-line-right(url("../img/service_bg_right.svg"), 350);
     margin-bottom: 100px;
 }
 
@@ -107,8 +107,8 @@ body {
 .conditions {
     position: relative;
     background-color: $base-bg-light;
-    @include bg-line-top(url("/assets/img/conditions_bg_before.svg"), 300px);
-    @include bg-line-bottom(url("/assets/img/conditions_bg_after.svg"), 400px);
+    @include bg-line-top(url("../img/conditions_bg_before.svg"), 300px);
+    @include bg-line-bottom(url("../img/conditions_bg_after.svg"), 400px);
     padding: 50px 0 200px;
 
     &__deco-present {
@@ -135,8 +135,8 @@ body {
 @include sp {
     .conditions {
         padding: 50px 0 100px;
-        @include bg-line-top(url("/assets/img/conditions_bg_before.svg"), 150px);
-        @include bg-line-bottom(url("/assets/img/conditions_bg_after.svg"), 200px);
+        @include bg-line-top(url("../img/conditions_bg_before.svg"), 150px);
+        @include bg-line-bottom(url("../img/conditions_bg_after.svg"), 200px);
 
         &__deco-present {
             bottom: -100px;
@@ -181,7 +181,7 @@ body {
 }
 .application {
     position: relative;
-    @include bg-line-top(url("/assets/img/application_bg_before.svg"), 150px);
+    @include bg-line-top(url("../img/application_bg_before.svg"), 150px);
     background-color: $main-color;
     padding: 80px 0;
 }
