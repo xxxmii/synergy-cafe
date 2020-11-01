@@ -1,0 +1,147 @@
+.card {
+    background-color: $white;
+    max-width: calc((100% - 60px) / 4);
+    margin: 0 10px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    z-index: 1;
+
+    &__desc {
+        font-size: rem(14);
+        text-align: left;
+        line-height: 1.6;
+    }
+    &__img {
+        margin: 0 auto;
+        max-width: 140px;
+        height: 120px;
+    }
+    &__title {
+        font-size: rem(20);
+        font-weight: 600;
+        color: $main-color;
+        margin: 20px 0 10px;
+        text-align: center;
+    }
+}
+
+.cards {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0 -10px;
+}
+
+@include tablet {
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        max-width: calc((100% - 60px) / 2);
+        margin-bottom: 30px;
+    }
+}
+
+@include sp {
+    .card {
+        max-width: 100%;
+    }
+}
+
+.landscape-card {
+    background-color: $white;
+    width: calc((100% - 60px) / 3);
+    max-width: 380px;
+    padding: 50px 30px;
+    margin: 0 15px;
+    border-radius: 10px;
+
+    &__desc {
+        font-size: rem(15);
+        line-height: 1.6;
+        text-align: left;
+    }
+    &__img {
+        margin: 0 auto;
+        max-width: 280px;
+        height: 80px;
+        margin-bottom: 20px;
+
+        &--small {
+            max-width: 250px;
+        }
+    }
+}
+.landscape-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+}
+
+@include tablet {
+    .landscape-cards {
+        flex-wrap: wrap;
+    }
+
+    .landscape-card {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+
+        &__desc {
+            text-align: center;
+        }
+    }
+}
+
+.review-card {
+    display: flex;
+    background-color: $white;
+    padding: 30px 25px;
+    margin: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 6px 6px #d6cbb5;
+
+    &__icon {
+        width: 50px;
+        margin-right: 15px;
+
+        img {
+            border-radius: 50px;
+        }
+    }
+    &__comment {
+        line-height: 2;
+    }
+    &-content {
+        text-align: left;
+    }
+    &__reviewer {
+        font-size: rem(15);
+        line-height: 1.2;
+        color: #999;
+    }
+}
+
+@include sp {
+    .review-card {
+        text-align: left;
+
+        &__comment {
+            font-size: rem(16);
+            line-height: 1.4;
+            margin-bottom: 5px;
+        }
+        &__reviewer {
+            font-size: rem(13);
+        }
+    }
+}
+
+.review-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -10px -15px;
+}
